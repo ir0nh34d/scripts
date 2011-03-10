@@ -1,0 +1,23 @@
+#!/bin/bash
+
+unset CVS_RSH
+unset HISTCONTROL
+unset HISTIGNORE
+unset MANPATH
+unset PRINTER
+unset PWD
+unset SHLVL
+unset TERM
+unset USER
+unset HOSTNAME
+unset INFOPATH
+unset LANG
+unset PROMPT_COMMAND
+export PATH=$WINPATH
+unset WINPATH
+unset CC
+unset CXX
+unset DLLWRAP
+unset RC
+
+/usr/bin/cygstart $@

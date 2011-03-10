@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export ARCH=32
+export CC=i686-w64-mingw32-gcc.exe
+export CXX=i686-w64-mingw32-g++.exe
+export RC=i686-w64-mingw32-windres.exe
+export DLLWRAP=i686-w64-mingw32-dllwrap.exe
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]MinGW \[\e[33m\]\w\[\e[0m\]\n\$ '
+
+/bin/bash --init-file /usr/local/etc/mingw_environment
