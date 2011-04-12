@@ -19,5 +19,6 @@ unset CC
 unset CXX
 unset DLLWRAP
 unset RC
+unset ENV
 
 /usr/bin/cygstart $@
