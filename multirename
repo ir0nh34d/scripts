@@ -1,0 +1,25 @@
+#!/bin/mksh
+
+test=0
+
+while getopts t o
+do
+case "$o" in
+  t)    test=1;;
+  [?])  echo "Usage: $0 [-t] regex filelist"
+        echo "  -t  test only (no rename)"
+        exit 1;;
+esac
+done
+
+shift $OPTIND-1
+
+for i in $2
+do
+  echo "$i" "==>" "$(echo $i | sed "$1")"
+  if [ $test -eq 0 ]
+  then
+    mv "$i" "$(echo $i | sed "$1")"
+  fi
+done
+
