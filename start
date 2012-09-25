@@ -21,5 +21,6 @@ unset DLLWRAP
 unset RC
 unset ENV
 unset SHELL
+unset TZ
 
 /usr/bin/cygstart $@
